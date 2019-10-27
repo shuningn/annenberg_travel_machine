@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<head>
+    <title>Travel Machine</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sarpanch:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div id  = "sidebar">
+        <h3>TRAVEL  MACHINE</h3>
+    </div>
+
+    <div id = "header">
+        <h1>BET YOUR</h1>
+        <h2>JOURNEY</h2>
+    </div>
+
+    <div id = "container">
+        <div id = "chips">
+            <img class = "coin one" src = "images/poker-chip.png" alt = "chip">
+            <img class = "coin two" src = "images/poker-chip.png" alt = "chip">
+            <img class = "coin five" src = "images/poker-chip.png" alt = "chip">
+            <img class = "coin ten" src = "images/poker-chip.png" alt = "chip">
+            <div class = "alert">
+                <p>Select the number of days</p>
+                <p>you want to travel!!</p>
+                <img src = "images/alert.png" alt = alert>
+            </div>
+            <div id = "clearfloat"></div>
+            <section id="section07" class="demo">
+                <a href="#slot"><span></span><span></span><span></span><p>PACK YOUR BAGS<p></a>
+            </section>
+        </div>
+        <section id = slot>
+            <div class = "slot">
+                    <img src = "images/slot-machine.png" alt = "slotMachine">
+            </div>
+        </section>
+    </div>
+
+
+    <div id = "s1">
+
+
+    </div>
+
+<script>
+    coins = document.querySelectorAll(".coin");
+    click = 0;
+    console.log(coins);
+    for (i = 0; i < 4; i++){
+        console.log("coinaaaa s");
+        coins[i].onmouseover = function(){
+            document.querySelector(".alert").style.visibility = "visible";
+        }
+        if (click == 0){
+            coins[i].onmouseout = function(){
+                document.querySelector(".alert").style.visibility = "hidden";
+            }
+        }
+    }
+    var x = "hello" + 10 +2;
+
+    console.log(x);
+    var y = 10 +2+"hello";
+    console.log(y);
+
+   document.querySelector(".one").onclick = function(){
+       click = 1;
+        document.querySelector(".alert").style.visibility = "visible";
+        document.querySelector("#section07 a").style.visibility = "visible";
+        document.querySelector(".one").style.opacity = "1";
+        document.querySelector(".two").style.opacity = "0.3";
+        document.querySelector(".five").style.opacity = "0.3";
+        document.querySelector(".ten").style.opacity = "0.3";
+    }
+    document.querySelector(".two").onclick = function(){
+        click = 1;
+        document.querySelector("#section07 a").style.visibility = "visible";
+        document.querySelector(".one").style.opacity = "0.3";
+        document.querySelector(".two").style.opacity = "1";
+        document.querySelector(".five").style.opacity = "0.3";
+        document.querySelector(".ten").style.opacity = "0.3";
+    }
+    document.querySelector(".five").onclick = function(){
+        click = 1;
+        document.querySelector("#section07 a").style.visibility = "visible";
+        document.querySelector(".one").style.opacity = "0.3";
+        document.querySelector(".two").style.opacity = "0.3";
+        document.querySelector(".five").style.opacity = "1";
+        document.querySelector(".ten").style.opacity = "0.3";
+    }
+    document.querySelector(".ten").onclick = function(){
+        click = 1;
+        document.querySelector("#section07 a").style.visibility = "visible";
+        document.querySelector(".one").style.opacity = "0.3";
+        document.querySelector(".two").style.opacity = "0.3";
+        document.querySelector(".five").style.opacity = "0.3";
+        document.querySelector(".ten").style.opacity = "1";
+    }
+
+
+
+</script>
+
+
+</body>
+
+</html>
