@@ -50,66 +50,9 @@
 
 
     </div>
-
-<script>
-    coins = document.querySelectorAll(".coin");
-    click = 0;
-    console.log(coins);
-    for (i = 0; i < 4; i++){
-        console.log("coinaaaa s");
-        coins[i].onmouseover = function(){
-            document.querySelector(".alert").style.visibility = "visible";
-        }
-        if (click == 0){
-            coins[i].onmouseout = function(){
-                document.querySelector(".alert").style.visibility = "hidden";
-            }
-        }
-    }
-    var x = "hello" + 10 +2;
-
-    console.log(x);
-    var y = 10 +2+"hello";
-    console.log(y);
-
-   document.querySelector(".one").onclick = function(){
-       click = 1;
-        document.querySelector(".alert").style.visibility = "visible";
-        document.querySelector("#section07 a").style.visibility = "visible";
-        document.querySelector(".one").style.opacity = "1";
-        document.querySelector(".two").style.opacity = "0.3";
-        document.querySelector(".five").style.opacity = "0.3";
-        document.querySelector(".ten").style.opacity = "0.3";
-    }
-    document.querySelector(".two").onclick = function(){
-        click = 1;
-        document.querySelector("#section07 a").style.visibility = "visible";
-        document.querySelector(".one").style.opacity = "0.3";
-        document.querySelector(".two").style.opacity = "1";
-        document.querySelector(".five").style.opacity = "0.3";
-        document.querySelector(".ten").style.opacity = "0.3";
-    }
-    document.querySelector(".five").onclick = function(){
-        click = 1;
-        document.querySelector("#section07 a").style.visibility = "visible";
-        document.querySelector(".one").style.opacity = "0.3";
-        document.querySelector(".two").style.opacity = "0.3";
-        document.querySelector(".five").style.opacity = "1";
-        document.querySelector(".ten").style.opacity = "0.3";
-    }
-    document.querySelector(".ten").onclick = function(){
-        click = 1;
-        document.querySelector("#section07 a").style.visibility = "visible";
-        document.querySelector(".one").style.opacity = "0.3";
-        document.querySelector(".two").style.opacity = "0.3";
-        document.querySelector(".five").style.opacity = "0.3";
-        document.querySelector(".ten").style.opacity = "1";
-    }
-
-
-
-</script>
-
+    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
