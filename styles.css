@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
 }
+html {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
 #header{
     padding-left: 10%;
     padding-top:3%;
@@ -8,7 +12,6 @@
 }
 #header h1{
     font-family: 'Montserrat', sans-serif;
-    /* font-family: 'Mansalva', cursive; */
     font-size: 73px;
     color:black;
     margin:0px;
@@ -16,7 +19,6 @@
 }
 #header h2{
     font-family: 'Montserrat', sans-serif;
-    /* font-family: 'Mansalva', cursive; */
     padding-left: 170px;
     padding-top: 20px;
     font-size: 86px;
@@ -28,6 +30,7 @@ body{
     background-color: #ECEBE9;
     margin:0px;
 }
+/* section 1 */
 #chips img{
     width:90px;
     margin: 30px;
@@ -46,10 +49,10 @@ body{
     box-sizing: border-box;
 
 }
+/* side bar */
 #sidebar {
     border-bottom: solid black 0.3px;
     text-align: center;
-    /* font-family: 'Sarpanch', sans-serif; */
     font-family: 'Montserrat', sans-serif;
     width: 100vh;
     height: 6vw;
@@ -65,7 +68,7 @@ h3{
     line-height: 6vw;
     letter-spacing: 7px;
 }
-.demo a {
+.slider a {
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -79,7 +82,7 @@ h3{
     text-decoration: none;
     transition: opacity .3s;
   }
-.demo a:hover {
+.slider a:hover {
     opacity: .5;
 }
 
@@ -94,16 +97,16 @@ section h1 {
     text-align: center;
     white-space: nowrap;
 }
-#section07 a {
+#slide a {
     font-family: 'Montserrat', sans-serif;
     visibility: hidden;
     padding-top: 100px;
 }
-#section07 p {
+#slide p {
     position: relative;
     left: -90px;
 }
-#section07 a span {
+#slide a span {
     position: absolute;
     top: 0;
     width: 24px;
@@ -118,43 +121,42 @@ section h1 {
     opacity: 0;
     box-sizing: border-box;
   }
-  #section07 a span:nth-of-type(1) {
-    -webkit-animation-delay: 0s;
-    animation-delay: 0s;
+#slide a span:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+#slide a span:nth-of-type(2) {
+  top: 16px;
+  -webkit-animation-delay: .15s;
+  animation-delay: .15s;
+}
+#slide a span:nth-of-type(3) {
+  top: 32px;
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+}
+@-webkit-keyframes sdb07 {
+  0% {
+    opacity: 0;
   }
-  #section07 a span:nth-of-type(2) {
-    top: 16px;
-    -webkit-animation-delay: .15s;
-    animation-delay: .15s;
+  50% {
+    opacity: 1;
   }
-  #section07 a span:nth-of-type(3) {
-    top: 32px;
-    -webkit-animation-delay: .3s;
-    animation-delay: .3s;
+  100% {
+    opacity: 0;
   }
-  @-webkit-keyframes sdb07 {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
+}
+@keyframes sdb07 {
+  0% {
+    opacity: 0;
   }
-  @keyframes sdb07 {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
+  50% {
+    opacity: 1;
   }
-  
+  100% {
+    opacity: 0;
+  }
+}
 .alert{
     visibility: hidden;
     position:relative;
@@ -176,17 +178,242 @@ section h1 {
     top: -20px;
     width: 10px;
 }
+.left{
+  width: 50%;
+  float: left;
+}
 .slot{
     margin-top: 380px;
-    margin-bottom:250px;
     margin-left:auto;
     margin-right:auto;
-    width:30%;
+    width:80%;
     display:none;
 }
-.slot img{
+
+.arrow{
+  position:relative;
+  width:110px;
+  left: 100%;
+  top:230px;
+}
+.word{
+  position:relative;
+  transform: rotate(270deg);
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 3px;
+  font-size: 20px;
+  left: 48%;
+  top:-135px;
+}
+#machine{
     width:100%;
 }
 .clearfloat{
     clear:both;
+}
+
+/* styling the complete content div */
+#content{
+  width:200%;
+}
+#left{
+  width: 50%;
+  float:left;
+}
+#story{
+  width:50%;
+  float:right;
+  margin-top: 10%;
+  /* border:2px black solid; */
+  display:none;
+  padding-left: 10%;
+}
+
+/* styling story 1: Japan */
+#story1{
+  display:none;
+}
+.image1{
+    position:relative;
+    left: 70%;
+    padding-top: 8%;
+}
+.image11{
+  width: 300px;
+}
+.image12{
+  width: 300px;
+}
+.image11 img{
+  width: 100%;
+  transform: rotate(355deg);
+  margin-bottom: 20px;
+}
+.image12 img{
+  width: 100%;
+  transform: rotate(10deg);
+}
+#story1p{
+  position:relative;
+  width: 55%;
+  top: -500px;
+  padding-left: 7%;
+  font-family: 'Montserrat', sans-serif;
+  line-height:30px;
+
+}
+#story1p h2{
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: 'Red Hat Text', sans-serif;
+  font-size:40px;
+  letter-spacing: 6px;
+}
+#word1{
+  font-family: 'Gochi Hand', cursive;
+  position:relative;
+  top:-700px;
+  font-size: 40px;
+  transform: rotate(350deg);
+}
+
+/* styling story : Vietnam*/
+#story2{
+  display:none;
+}
+.image2{
+    position:relative;
+    left: 70%;
+    padding-top: 8%;
+}
+.image21{
+  width: 300px;
+}
+.image22{
+  width: 300px;
+}
+.image21 img{
+  width: 100%;
+  transform: rotate(10deg);
+  margin-bottom: 20px;
+}
+.image22 img{
+  width: 100%;
+  transform: rotate(357deg);
+}
+#story2p{
+  position:relative;
+  width: 55%;
+  top: -600px;
+  padding-left: 7%;
+  font-family: 'Montserrat', sans-serif;
+  line-height:24px;
+
+}
+#word2{
+  font-family: 'Gochi Hand', cursive;
+  position:relative;
+  top:-700px;
+  left: 5%;
+  font-size: 40px;
+  transform: rotate(355deg);
+}
+#story2p h2{
+  padding-bottom: 30px;
+  text-align: center;
+  font-family: 'Red Hat Text', sans-serif;
+  font-size:50px;
+  letter-spacing: 15px;
+}
+/* styling story : Vietnam*/
+#story3{
+  display:none;
+}
+.image3{
+    position:relative;
+    padding-top: 8%;
+}
+.image31{
+  width: 300px;
+}
+.image32{
+  width: 300px;
+}
+.image31 img{
+  width: 100%;
+  /* transform: rotate(10deg); */
+  margin-bottom: 10px;
+}
+.image32 img{
+  width: 100%;
+  /* transform: rotate(357deg); */
+}
+#story3p{
+  position:relative;
+  width: 80%;
+  top: -650px;
+  padding-left: 34%;
+  font-family: 'Montserrat', sans-serif;
+  line-height:24px;
+}
+#word3{
+  font-family: 'Gochi Hand', cursive;
+  position:relative;
+  top:-600px;
+  left: 60%;
+  font-size: 35px;
+  transform: rotate(6deg);
+}
+#story3p h2{
+  padding-bottom: 30px;
+  text-align: center;
+  font-family: 'Red Hat Text', sans-serif;
+  font-size:50px;
+  letter-spacing: 15px;
+}
+/* styling story : Vietnam*/
+#story4{
+  display:none;
+}
+.image4{
+    position:relative;
+    padding-top: 8%;
+}
+.image41{
+  width: 300px;
+}
+.image42{
+  width: 300px;
+}
+.image41 img{
+  width: 100%;
+  /* transform: rotate(10deg); */
+  margin-bottom: 10px;
+}
+.image42 img{
+  width: 100%;
+  /* transform: rotate(357deg); */
+}
+#story4p{
+  position:relative;
+  width: 80%;
+  top: -650px;
+  padding-left: 34%;
+  font-family: 'Montserrat', sans-serif;
+  line-height:24px;
+}
+#word4{
+  font-family: 'Gochi Hand', cursive;
+  position:relative;
+  top:-600px;
+  left: 60%;
+  font-size: 35px;
+  transform: rotate(6deg);
+}
+#story4p h2{
+  padding-bottom: 30px;
+  text-align: center;
+  font-family: 'Red Hat Text', sans-serif;
+  font-size:50px;
+  letter-spacing: 15px;
 }
