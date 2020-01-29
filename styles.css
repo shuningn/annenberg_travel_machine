@@ -1,95 +1,148 @@
-* {
-    box-sizing: border-box;
+html, body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
 }
-html, body 
-{
-  overflow-y: hidden;
-  overflow-x: hidden;
-  height: 100%;
-  width: 100%;
+
+
+
+
+body {
+    background-color: #ecebe9;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
 }
-body{
-  background-color: #ECEBE9;
-  margin:0px;
-  font-family: 'Montserrat', sans-serif;
-}
+
+
+
+
 /* header styling */
-#hover{
-  margin-top:100%;
-  font-family: 'Gochi Hand', cursive;
-  text-align:center;
-  visibility :hidden;
-  width: 50%;
-  font-size: 23px;
-  margin-left:auto;
-  margin-right:auto;
+#hover {
+    margin-top: 100%;
+    font-family: "Gochi Hand", cursive;
+    text-align: center;
+    visibility: hidden;
+    width: 50%;
+    font-size: 23px;
+    margin-left: auto;
+    margin-right: auto;
 }
-#subhead{
-  width: 70%;
-  padding-left: 6%;
-  padding-top: 4%;
-  font-size: 14px;
+
+
+
+
+#subhead {
+    width: 70%;
+    padding-left: 6%;
+    padding-top: 4%;
+    font-size: 14px;
 }
-#logo{
-  width:18%; 
-  padding-left:1%;
-  position: absolute;
+
+
+
+
+#logo {
+    width: 18%;
+    padding-left: 1%;
+    position: absolute;
 }
-#footer{
-  width:100%;
-  padding-left:80%;
-  padding-top: 53%;
-  position: absolute;
-  font-size:10px;
-  z-index: -2;
+
+
+
+
+#footer {
+    width: 100%;
+    padding-left: 80%;
+    padding-top: 53%;
+    position: absolute;
+    font-size: 10px;
+    z-index: -2;
 }
-#header{
+
+
+
+
+#header {
     padding-left: 10%;
-    padding-top:3%;
+    padding-top: 3%;
     padding-bottom: 5%;
 }
-#header h1{
-    font-family: 'Montserrat', sans-serif;
+
+
+
+
+#header h1 {
+    font-family: "Montserrat", sans-serif;
     font-size: 73px;
-    color:black;
-    margin:0px;
+    color: black;
+    margin: 0;
     letter-spacing: 5px;
 }
-#header h2{
-    font-family: 'Montserrat', sans-serif;
+
+
+
+
+#header h2 {
+    font-family: "Montserrat", sans-serif;
     padding-left: 170px;
     padding-top: 20px;
     font-size: 86px;
-    color:black;
-    margin:0px;
+    color: black;
+    margin: 0;
     letter-spacing: 12px;
 }
+
+
+
+
 /* section 1 */
-#chips img{
-    width:90px;
+#chips img {
+    width: 90px;
     margin-left: 30px;
     margin-right: 30px;
 }
-#chips{
-    width:45%;
-    position:center;
-    margin-left:auto;
-    margin-right:auto;
+
+
+
+
+#chips {
+    width: 45%;
+    position: center;
+    margin-left: auto;
+    margin-right: auto;
     cursor: pointer;
 }
-.textbox{
-    width:50%;
-    margin-top:90px;
-    margin-left:auto;
-    margin-right:auto;
+
+
+
+
+.coin {
+    /* so the chips change opacity gradually */
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+
+
+
+.textbox {
+    width: 50%;
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
     box-sizing: border-box;
 
 }
+
+
+
+
 /* side bar */
 #sidebar {
     border-bottom: solid black 0.3px;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     width: 100vh;
     height: 6vw;
     transform-origin: top left;
@@ -97,18 +150,30 @@ body{
     left: 0;
     top: 100%;
     transform: rotate(-90deg);
-    background-color:rgba(254, 254, 254, 0.749);
+    background-color: rgba(254, 254, 254, 0.749);
 }
- /* sidebar title */
-h3{
-    font-size:23px;
-    margin:0px;
+
+
+
+
+/* sidebar title */
+h3 {
+    font-size: 23px;
+    margin: 0;
     line-height: 6vw;
     letter-spacing: 7px;
 }
-#important{
-  color:rgb(146, 46, 46);
+
+
+
+
+#important {
+    color: rgb(146, 46, 46);
 }
+
+
+
+
 .slider a {
     position: absolute;
     bottom: 20px;
@@ -118,14 +183,21 @@ h3{
     -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
     color: rgb(0, 0, 0);
-    font : normal 400 20px/1 'Josefin Sans', sans-serif;
+    font: normal 400 20px/1 "Josefin Sans", sans-serif;
     letter-spacing: .1em;
     text-decoration: none;
     transition: opacity .3s;
-  }
+}
+
+
+
+
 .slider a:hover {
     opacity: .5;
 }
+
+
+
 
 section h1 {
     position: absolute;
@@ -134,19 +206,31 @@ section h1 {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     color: rgb(0, 0, 0);
-    font : normal 300 64px/1 'Josefin Sans', sans-serif;
+    font: normal 300 64px/1 "Josefin Sans", sans-serif;
     text-align: center;
     white-space: nowrap;
 }
+
+
+
+
 #slide a {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     visibility: hidden;
     padding-top: 100px;
 }
+
+
+
+
 #slide p {
     position: relative;
     left: -90px;
 }
+
+
+
+
 #slide a span {
     position: absolute;
     top: 0;
@@ -161,167 +245,257 @@ section h1 {
     animation: sdb07 2s infinite;
     opacity: 0;
     box-sizing: border-box;
-  }
+}
+
+
+
+
 #slide a span:nth-of-type(1) {
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
 }
+
+
+
+
 #slide a span:nth-of-type(2) {
-  top: 16px;
-  -webkit-animation-delay: .15s;
-  animation-delay: .15s;
+    top: 16px;
+    -webkit-animation-delay: .15s;
+    animation-delay: .15s;
 }
+
+
+
+
 #slide a span:nth-of-type(3) {
-  top: 32px;
-  -webkit-animation-delay: .3s;
-  animation-delay: .3s;
+    top: 32px;
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s;
 }
+
+
+
+
 @-webkit-keyframes sdb07 {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
+
+
+
+
 @keyframes sdb07 {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
+
+
+
+
 /* alert message for when hovering the coins */
-.alert{
-    visibility: hidden;
-    position:relative;
-    float:right;
-    border:1px black;
+.alert {
+    /*visibility: hidden;*/
+    position: relative;
+    float: right;
+    border: 1px black;
     text-align: center;
     top: -320px;
     left: 150px;
-    font-family: 'Mansalva', cursive;
+    font-family: "Mansalva", cursive;
     font-size: 25px;
     transform: rotate(9deg);
-    visibility: visible;
+    /*visibility: visible;*/
 }
-.alert p{
-    margin:0px;
+
+
+
+
+.alert p {
+    margin: 0;
 }
-.alert img{
-    padding:0px;
-    position:relative;
+
+
+
+
+.alert img {
+    padding: 0;
+    position: relative;
     top: -20px;
     width: 10px;
 }
-.left{
-  width: 50%;
-  float: left;
+
+
+
+
+.left {
+    width: 50%;
+    float: left;
 }
-.slot{
+
+
+
+
+.slot {
     margin-top: 20%;
-    margin-left:auto;
-    margin-right:auto;
-    width:80%;
-    display:none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: none;
     height: 100%;
 }
+
+
+
+
 /* arrow pointing to the next page */
-.arrow{
-  position:relative;
-  width: 10%;
-  left: 100%;
-  /* not percentage */
-  top: 240px;
-  /* padding-top: 10%; */
-  cursor: pointer;
-}
-.arrow img{
-  width: 100%;
-}
-/* guide work pointing to the next page */
-.word{
-  position:relative;
-  transform: rotate(270deg);
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 3px;
-  font-size: 20px;
-  left: 48%;
-  top:-135px;
-}
-#first{
-  position: absolute;
-  top: 64%;
-  left: 30%;
-  z-index: 5;
-  font-size: 40px;
-  /* border: black solid 0.1em; */
-  width: 13%;
-  text-align: center;
-  font-family: 'Gochi Hand', cursive;
-  cursor: pointer;
-  display:none;
-}
-#second{
-  position: absolute;
-  top: 64%;
-  left: 44%;
-  z-index: 5;
-  font-size: 40px;
-  width: 13%;
-  text-align: center;
-  font-family: 'Gochi Hand', cursive;
-  cursor: pointer;
-  /* border: black solid 0.1em; */
-  display:none;
-}
-#third{
-  position: absolute;
-  top: 64%;
-  left: 57%;
-  z-index: 5;  
-  width: 13%;
-  text-align: center;
-  font-size:40px;
-  font-family: 'Gochi Hand', cursive;
-  cursor: pointer;
-  /* border: black solid 0.1em; */
-  display:none;
-}
-#machine{
-  width:70%;
-  margin-left: auto;
-  margin-right:auto;
-}
-#machine img{
-    width:100%;
+.arrow {
+    position: relative;
+    width: 10%;
+    left: 100%;
+    /* not percentage */
+    top: 240px;
+    /* padding-top: 10%; */
     cursor: pointer;
 }
-.clearfloat{
-    clear:both;
+
+
+
+
+.arrow img {
+    width: 100%;
 }
 
-#footer{
-  position: fixed;
-  top:-30px;
+
+
+
+/* guide work pointing to the next page */
+.word {
+    position: relative;
+    transform: rotate(270deg);
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 3px;
+    font-size: 20px;
+    left: 48%;
+    top: -135px;
 }
+
+
+
+
+#first {
+    position: absolute;
+    top: 64%;
+    left: 30%;
+    z-index: 5;
+    font-size: 40px;
+    /* border: black solid 0.1em; */
+    width: 13%;
+    text-align: center;
+    font-family: "Gochi Hand", cursive;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+#second {
+    position: absolute;
+    top: 64%;
+    left: 44%;
+    z-index: 5;
+    font-size: 40px;
+    width: 13%;
+    text-align: center;
+    font-family: "Gochi Hand", cursive;
+    cursor: pointer;
+    /* border: black solid 0.1em; */
+    display: none;
+}
+
+
+
+
+#third {
+    position: absolute;
+    top: 64%;
+    left: 57%;
+    z-index: 5;
+    width: 13%;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Gochi Hand", cursive;
+    cursor: pointer;
+    /* border: black solid 0.1em; */
+    display: none;
+}
+
+
+
+
+#machine {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+#machine img {
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+
+.clearfloat {
+    clear: both;
+}
+
+
+
+
+#footer {
+    position: fixed;
+    top: -30px;
+}
+
+
+
 
 .submit, .description {
-  cursor: pointer;
-  margin-top: 10px;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
-#pack{
-  width:5%;
-  margin-left:76%;
+
+
+
+#pack {
+    width: 5%;
+    margin-left: 76%;
 }
-#pack img{
-  width:100%;
+
+
+
+
+#pack img {
+    width: 100%;
 }
+

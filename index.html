@@ -1,7 +1,8 @@
 <!DOCTYPE html>
+<html>
 <head>
     <title>Travel Machine</title>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- fonts -->
@@ -12,8 +13,8 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Red+Hat+Text&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap" rel="stylesheet">
-    <!-- bootstrap and  -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+
+    <!-- css -->
     <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -26,31 +27,35 @@
         <img id="logo" src="images/annen.png" alt="logo">
     </div>
     <div id="footer">
-            <p>Created By Ray Jin, JiaCheng Li, Blair Niu, XiongSen Xia</p>
+        <p>Created By Ray Jin, JiaCheng Li, Blair Niu, XiongSen Xia, Audrey Bongalon</p>
     </div>
-    <div id="header">
-        <h1>BET YOUR</h1>
-        <h2>JOURNEY</h2>
-        <div id="subhead">
-            <p>Are you looking for some
-            inspirations for an exciting trip this upcoming holiday season? </p>
-            <p>Use our travel machine to help you choose a destination. </p>
-        </div>
-        </div>
-    </div>
+
+
 
 
     <div id="section1">
+        <div id="header">
+            <h1>BET YOUR</h1>
+            <h2>JOURNEY</h2>
+            <div id="subhead">
+                <p>Are you looking for some inspirations for an exciting trip this upcoming holiday season?</p>
+                <p>Use our travel machine to help you choose a destination.</p>
+            </div>
+        </div>
+
         <div id="chips">
-            <img class="coin one" src="images/poker-chip1.png" alt="chip">
-            <img class="coin two" src="images/poker-chip2.png" alt="chip">
-            <img class="coin five" src="images/poker-chip3.png" alt="chip">
-            <img class="coin ten" src="images/poker-chip4.png" alt="chip">
+            <img class="coin"   src="images/poker-chip1.png"    alt="chip"  data-travel-days="3">
+            <img class="coin"   src="images/poker-chip2.png"    alt="chip"  data-travel-days="5">
+            <img class="coin"   src="images/poker-chip3.png"    alt="chip"  data-travel-days="7">
+            <img class="coin"   src="images/poker-chip4.png"    alt="chip"  data-travel-days="10">
+
             <div class="alert">
                 <p>Select the number of days</p>
                 <p>you want to travel!!</p>
                 <img src="images/alert.png" alt=alert>
             </div>
+
+<!--            TODO -->
             <div id="clearfloat"></div>
             <section id="slide" class="slider">
                 <a href="#slot"><span></span><span></span><span></span><p>Start Your Journey<p></a>
@@ -58,31 +63,23 @@
         </div>
     </div>
 
-        <section id="slot">
-            <div id ="hover">
-                <p> Add some random excitement for your trip by
-                    clicking on the question marks in our slot machine.
-                    We’ll do the thinking for you!</p>
-                <span id="important">Click anywhere on slot machine once your are done</span>
-
-            </div>
-            <div id="machine">
-                <img src="images/Machine.png" alt="slotMachine">
-                        <div id="first">
-                            ?
-                        </div>
-                        <div id="second">
-                            ?
-                        </div>
-                        <div id="third">
-                            ?
-                        </div>
-            </div>
-        </section>
+    <section id="slot">
+        <div id="hover">
+            <p> Add some random excitement for your trip by clicking on the question marks in our slot machine.
+            We’ll do the thinking for you!</p>
+            <span id="important">Click anywhere on slot machine once your are done</span>
+        </div>
+        <div id="machine">
+            <img src="images/Machine.png" alt="slotMachine">
+            <div id="first">?</div>
+            <div id="second">?</div>
+            <div id="third">?</div>
+        </div>
+    </section>
 
 
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-    <script src="script.js"></script>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="travel-machine.js"></script>
 </body>
-
 </html>
+
