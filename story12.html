@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Travel Machine - Isfahan</title>
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Sarpanch:600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Red+Hat+Text&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap" rel="stylesheet">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+        <link rel="stylesheet" href="story3.css">
+    </head>
+    <body>
+        <div id  = "sidebar">
+            <h3>BET YOUR JOURNEY</h3>
+        </div>
+        <div id = "logo">
+            <img id = "logo" src = "images/annen.png" alt = "logo">
+        </div>
+        <div id = "footer">
+            <p>Created By Ray Jin, JiaCheng Li, Blair Niu, XiongSen Xia</p>
+        </div>
+
+          <div id = "story1">
+                <div class = "image1">
+                        <div class = image11>
+                            <img src = "images/image121.JPG" alt = "image1">
+                        </div>
+                        <div class= "image12">
+                            <img src = "images/image122.JPG" alt = "image2">
+                        </div>
+                    </div>
+                    <div id = "word1">
+                            <p>"White, Fun, Crown"</p>
+                            <p>&nbsp- Sara Babakniya said her trip to Isfahan was</p>
+                            <p>her most memorable one yet.</p>
+                    </div>
+                    <div id = "story1t">
+                            <h2>Isfahan</h2>
+                            <p> Babakniya, a first-year graduate student in Viterbi, is from Iran. She travelled to Isfahan, where she enjoyed a sky full of stars in the middle of a desert.</p>
+        
+                            <p>As a city embracing distinctive culture, Isfahan appeals to  Babakniya with its unique fashion. She told us that “normally in Iran, people wear black or dark color, but that city is famous because all the women there wear whites.”</p>
+                            
+                            <p>During  Babakniya’s journey, she stayed at the house of a local, which was “very, very beautiful”, with “a very small pool in the middle of the house”. According to  Babakniya, locals in Isfahan always keep their doors open for travelers. “People are very kind to guests and they might give you free food because you are guest to their home,” she said. </p>
+                            
+                            <p> “We stayed the whole night in the desert to see the sky.” It was  Babakniya’s first time experiencing the night sky in a desert. “the sky is very clear and you can see the galaxy.” With the help of friends who know astronomy well,  Babakniya was even able to recognize specific stars.</p>
+                            
+                            <p>“I hope that one day I might repeat that trip and see those stars again,” said  Babakniya. “That was very unique and memorable.”</p>
+                                
+                    </div>
+                    <div id = "storyd1">
+                            <h2>Isfahan</h2>
+                            <p>The city of Isfahan, the capital of the Isfahan Province in Iran, has a population of 1.6 million. As is said by the Persian “Isfahan is half of the world”, Isfahan has a long history and has witnessed its greatest prosperity in the 16th and 17th centuries under the Safavid dynasty. </p>
+                    </div>
+                <div class = "buttons">
+                        <button class = "description">
+                            Read More About Isfahan
+                        </button>
+                        <button class = "submit" onclick="location.href = 'index.html';">
+                            Reselect Your Journey
+                        </button>
+                </div>
+            </div>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script>
+    
+        document.querySelector('.description').onclick = function(){
+            document.querySelector("#story1t").style.display = "none";
+            document.querySelector("#storyd1").style.display = "block";
+        }
+    </script>
+    </body>
+</html>

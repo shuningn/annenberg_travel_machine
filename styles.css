@@ -1,14 +1,52 @@
 * {
     box-sizing: border-box;
 }
-html {
+html, body 
+{
   overflow-y: hidden;
   overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+}
+body{
+  background-color: #ECEBE9;
+  margin:0px;
+  font-family: 'Montserrat', sans-serif;
+}
+/* header styling */
+#hover{
+  margin-top:100%;
+  font-family: 'Gochi Hand', cursive;
+  text-align:center;
+  visibility :hidden;
+  width: 50%;
+  font-size: 23px;
+  margin-left:auto;
+  margin-right:auto;
+}
+#subhead{
+  width: 70%;
+  padding-left: 6%;
+  padding-top: 4%;
+  font-size: 14px;
+}
+#logo{
+  width:18%; 
+  padding-left:1%;
+  position: absolute;
+}
+#footer{
+  width:100%;
+  padding-left:80%;
+  padding-top: 53%;
+  position: absolute;
+  font-size:10px;
+  z-index: -2;
 }
 #header{
     padding-left: 10%;
     padding-top:3%;
-    padding-bottom: 100px;
+    padding-bottom: 5%;
 }
 #header h1{
     font-family: 'Montserrat', sans-serif;
@@ -26,20 +64,18 @@ html {
     margin:0px;
     letter-spacing: 12px;
 }
-body{
-    background-color: #ECEBE9;
-    margin:0px;
-}
 /* section 1 */
 #chips img{
     width:90px;
-    margin: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 #chips{
     width:45%;
     position:center;
     margin-left:auto;
     margin-right:auto;
+    cursor: pointer;
 }
 .textbox{
     width:50%;
@@ -61,12 +97,17 @@ body{
     left: 0;
     top: 100%;
     transform: rotate(-90deg);
+    background-color:rgba(254, 254, 254, 0.749);
 }
+ /* sidebar title */
 h3{
     font-size:23px;
     margin:0px;
     line-height: 6vw;
     letter-spacing: 7px;
+}
+#important{
+  color:rgb(146, 46, 46);
 }
 .slider a {
     position: absolute;
@@ -157,6 +198,7 @@ section h1 {
     opacity: 0;
   }
 }
+/* alert message for when hovering the coins */
 .alert{
     visibility: hidden;
     position:relative;
@@ -168,6 +210,7 @@ section h1 {
     font-family: 'Mansalva', cursive;
     font-size: 25px;
     transform: rotate(9deg);
+    visibility: visible;
 }
 .alert p{
     margin:0px;
@@ -183,19 +226,27 @@ section h1 {
   float: left;
 }
 .slot{
-    margin-top: 380px;
+    margin-top: 20%;
     margin-left:auto;
     margin-right:auto;
     width:80%;
     display:none;
+    height: 100%;
 }
-
+/* arrow pointing to the next page */
 .arrow{
   position:relative;
-  width:110px;
+  width: 10%;
   left: 100%;
-  top:230px;
+  /* not percentage */
+  top: 240px;
+  /* padding-top: 10%; */
+  cursor: pointer;
 }
+.arrow img{
+  width: 100%;
+}
+/* guide work pointing to the next page */
 .word{
   position:relative;
   transform: rotate(270deg);
@@ -205,215 +256,72 @@ section h1 {
   left: 48%;
   top:-135px;
 }
+#first{
+  position: absolute;
+  top: 64%;
+  left: 30%;
+  z-index: 5;
+  font-size: 40px;
+  /* border: black solid 0.1em; */
+  width: 13%;
+  text-align: center;
+  font-family: 'Gochi Hand', cursive;
+  cursor: pointer;
+  display:none;
+}
+#second{
+  position: absolute;
+  top: 64%;
+  left: 44%;
+  z-index: 5;
+  font-size: 40px;
+  width: 13%;
+  text-align: center;
+  font-family: 'Gochi Hand', cursive;
+  cursor: pointer;
+  /* border: black solid 0.1em; */
+  display:none;
+}
+#third{
+  position: absolute;
+  top: 64%;
+  left: 57%;
+  z-index: 5;  
+  width: 13%;
+  text-align: center;
+  font-size:40px;
+  font-family: 'Gochi Hand', cursive;
+  cursor: pointer;
+  /* border: black solid 0.1em; */
+  display:none;
+}
 #machine{
+  width:70%;
+  margin-left: auto;
+  margin-right:auto;
+}
+#machine img{
     width:100%;
+    cursor: pointer;
 }
 .clearfloat{
     clear:both;
 }
 
-/* styling the complete content div */
-#content{
-  width:200%;
-}
-#left{
-  width: 50%;
-  float:left;
-}
-#story{
-  width:50%;
-  float:right;
-  margin-top: 10%;
-  /* border:2px black solid; */
-  display:none;
-  padding-left: 10%;
+#footer{
+  position: fixed;
+  top:-30px;
 }
 
-/* styling story 1: Japan */
-#story1{
-  display:none;
-}
-.image1{
-    position:relative;
-    left: 70%;
-    padding-top: 8%;
-}
-.image11{
-  width: 300px;
-}
-.image12{
-  width: 300px;
-}
-.image11 img{
-  width: 100%;
-  transform: rotate(355deg);
-  margin-bottom: 20px;
-}
-.image12 img{
-  width: 100%;
-  transform: rotate(10deg);
-}
-#story1p{
-  position:relative;
-  width: 55%;
-  top: -500px;
-  padding-left: 7%;
-  font-family: 'Montserrat', sans-serif;
-  line-height:30px;
-
-}
-#story1p h2{
-  padding-bottom: 20px;
-  text-align: center;
-  font-family: 'Red Hat Text', sans-serif;
-  font-size:40px;
-  letter-spacing: 6px;
-}
-#word1{
-  font-family: 'Gochi Hand', cursive;
-  position:relative;
-  top:-700px;
-  font-size: 40px;
-  transform: rotate(350deg);
+.submit, .description {
+  cursor: pointer;
+  margin-top: 10px;
 }
 
-/* styling story : Vietnam*/
-#story2{
-  display:none;
+#pack{
+  width:5%;
+  margin-left:76%;
 }
-.image2{
-    position:relative;
-    left: 70%;
-    padding-top: 8%;
-}
-.image21{
-  width: 300px;
-}
-.image22{
-  width: 300px;
-}
-.image21 img{
-  width: 100%;
-  transform: rotate(10deg);
-  margin-bottom: 20px;
-}
-.image22 img{
-  width: 100%;
-  transform: rotate(357deg);
-}
-#story2p{
-  position:relative;
-  width: 55%;
-  top: -600px;
-  padding-left: 7%;
-  font-family: 'Montserrat', sans-serif;
-  line-height:24px;
-
-}
-#word2{
-  font-family: 'Gochi Hand', cursive;
-  position:relative;
-  top:-700px;
-  left: 5%;
-  font-size: 40px;
-  transform: rotate(355deg);
-}
-#story2p h2{
-  padding-bottom: 30px;
-  text-align: center;
-  font-family: 'Red Hat Text', sans-serif;
-  font-size:50px;
-  letter-spacing: 15px;
-}
-/* styling story : Vietnam*/
-#story3{
-  display:none;
-}
-.image3{
-    position:relative;
-    padding-top: 8%;
-}
-.image31{
-  width: 300px;
-}
-.image32{
-  width: 300px;
-}
-.image31 img{
-  width: 100%;
-  /* transform: rotate(10deg); */
-  margin-bottom: 10px;
-}
-.image32 img{
-  width: 100%;
-  /* transform: rotate(357deg); */
-}
-#story3p{
-  position:relative;
-  width: 80%;
-  top: -650px;
-  padding-left: 34%;
-  font-family: 'Montserrat', sans-serif;
-  line-height:24px;
-}
-#word3{
-  font-family: 'Gochi Hand', cursive;
-  position:relative;
-  top:-600px;
-  left: 60%;
-  font-size: 35px;
-  transform: rotate(6deg);
-}
-#story3p h2{
-  padding-bottom: 30px;
-  text-align: center;
-  font-family: 'Red Hat Text', sans-serif;
-  font-size:50px;
-  letter-spacing: 15px;
-}
-/* styling story : Vietnam*/
-#story4{
-  display:none;
-}
-.image4{
-    position:relative;
-    padding-top: 8%;
-}
-.image41{
-  width: 300px;
-}
-.image42{
-  width: 300px;
-}
-.image41 img{
-  width: 100%;
-  /* transform: rotate(10deg); */
-  margin-bottom: 10px;
-}
-.image42 img{
-  width: 100%;
-  /* transform: rotate(357deg); */
-}
-#story4p{
-  position:relative;
-  width: 80%;
-  top: -650px;
-  padding-left: 34%;
-  font-family: 'Montserrat', sans-serif;
-  line-height:24px;
-}
-#word4{
-  font-family: 'Gochi Hand', cursive;
-  position:relative;
-  top:-600px;
-  left: 60%;
-  font-size: 35px;
-  transform: rotate(6deg);
-}
-#story4p h2{
-  padding-bottom: 30px;
-  text-align: center;
-  font-family: 'Red Hat Text', sans-serif;
-  font-size:50px;
-  letter-spacing: 15px;
+#pack img{
+  width:100%;
 }

@@ -1,0 +1,134 @@
+/* styling story 3 template */
+html{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #ECEBE9;
+    margin:0px;
+    font-family: 'Montserrat', sans-serif;
+}
+/* side bar */
+#sidebar {
+    border-bottom: solid black 0.3px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 100vh;
+    height: 6vw;
+    transform-origin: top left;
+    position: fixed;
+    left: 0;
+    top: 100%;
+    transform: rotate(-90deg);
+    background-color:rgba(254, 254, 254, 0.749);
+}
+ /* sidebar title */
+h3{
+    font-size:23px;
+    margin:0px;
+    line-height: 6vw;
+    letter-spacing: 7px;
+}
+
+.image1{
+    float:left;
+    width: 50%;
+}
+.image11{
+    width: 40%;
+    margin-bottom:5%;
+}
+.image12{
+    width: 40%;
+}
+img{
+    width:100%;
+    margin-left:70%;
+}
+#story1p{
+    width:50%;
+    float:left;
+    font-family: 'Montserrat', sans-serif;
+    margin-top:3%;
+    padding-right:10%;
+}
+#story1p h2{
+    padding-bottom: 3%;
+    text-align: center;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size:40px;
+    letter-spacing: 6px;
+}
+#story1k{
+    width:50%;
+    float:left;
+    font-family: 'Montserrat', sans-serif;
+    margin-top:3%;
+    padding-right:10%;
+    font-size:15px;
+}
+#story1k h2{
+    padding-bottom: 3%;
+    text-align: center;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size:40px;
+    letter-spacing: 6px;
+}
+#story1t{
+    width:50%;
+    float:left;
+    font-family: 'Montserrat', sans-serif;
+    margin-top:3%;
+    padding-right:10%;
+    font-size:13px;
+}
+#story1t h2{
+    padding-bottom: 3%;
+    text-align: center;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size:40px;
+    letter-spacing: 6px;
+}
+#storyd1{
+    width:50%;
+    float:left;
+    font-family: 'Montserrat', sans-serif;
+    margin-top:3%;
+    padding-right:10%;
+    display:none;
+}
+#storyd1 h2{
+    padding-bottom: 3%;
+    text-align: center;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size:40px;
+    letter-spacing: 6px;
+}
+.clearfloat{
+    clear:both;
+}
+.buttons{
+    float:right;
+    padding-right: 8%;
+}
+#word1{
+    margin-top:2%;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 28px;
+    transform: rotate(358deg);
+    margin-left:15%;
+}
+#logo{
+    width:18%; 
+    position: absolute;
+    margin-left:1%;
+
+}  
+#footer{
+    width:100%;
+    padding-left:80%;
+    padding-top: 53%;
+    position: absolute;
+    font-size:10px;
+    z-index: -2;
+}

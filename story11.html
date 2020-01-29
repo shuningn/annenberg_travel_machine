@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Travel Machine - Varanasi</title>
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Sarpanch:600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Red+Hat+Text&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap" rel="stylesheet">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+        <link rel="stylesheet" href="story3.css">
+    </head>
+    <body>
+        <div id  = "sidebar">
+            <h3>BET YOUR JOURNEY</h3>
+        </div>
+        <div id = "logo">
+            <img id = "logo" src = "images/annen.png" alt = "logo">
+        </div>
+        <div id = "footer">
+            <p>Created By Ray Jin, JiaCheng Li, Blair Niu, XiongSen Xia</p>
+        </div>
+
+          <div id = "story1">
+                <div class = "image1">
+                        <div class = image11>
+                            <img src = "images/image111.JPG" alt = "image1">
+                        </div>
+                        <div class= "image12">
+                            <img src = "images/image112.JPG" alt = "image2">
+                        </div>
+                    </div>
+                    <div id = "word1">
+                            <p>"You feel hopeful, you feel good."</p>
+                            <p>&nbsp-Salni Gandhi who said her trip to Varanasi</p>
+                            <p>was her most memorable one yet.</p>
+                    </div>
+                    <div id = "story1k">
+                            <h2>Varanasi</h2>
+                            <p> Saloni is a USC graduate student from India. She went to Varanasi when she was going through a difficult period and finally found a cure there. </p>
+                            <p> Varanasi is on the riverbank of Ganges, with sites for cremation alongside the river. Cremation takes place  24 hours a day with “bodies waiting to get cremated at that spot.” Saloni said  there are more than 600 bodies to be burnt in a day. With such a large number,  cremation has become an industry where people can book their cremation when they know they are going to die. Also, many travelers come to see the cremation. Saloni didn’t speak to anyone when she watched the cremation. </p>
+                            <p> "I didn't talk to anyone about it or anything,” she said. “Just being there, I actually started feeling better by myself.” And it was a transformational experience for her. </p>
+                            <p> “The place gives you hope”, Saloni said of Varanasi. “You feel hopeful, you feel good.” Two years later when Saloni visited Varanasi again, it was just as great as the first. “I again felt that religious atmosphere and was so happy that it was not a one time experience,” she said. </p>
+
+                            
+                    </div>
+                    <div id = "storyd1">
+                            <h2>Varanasi</h2>
+                            <p>Varanasi is a city located on the riverbank of Ganges, in the northwestern part of India. Varanasi is considered an important site for religious education and culture development thanks to its distinctive location near Ganges. It’s also the place where Buddha gave his first sermon in the 11th century. People believe that being cremated here brings salvation. </p> 
+                    </div>
+                <div class = "buttons">
+                        <button class = "description">
+                            Read More About Varanasi
+                        </button>
+                        <button class = "submit" onclick="location.href = 'index.html';">
+                            Reselect Your Journey
+                        </button>
+                </div>
+            </div>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script>
+    
+        document.querySelector('.description').onclick = function(){
+            document.querySelector("#story1k").style.display = "none";
+            document.querySelector("#storyd1").style.display = "block";
+        }
+    </script>
+    </body>
+</html>
