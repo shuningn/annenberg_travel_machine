@@ -20,62 +20,70 @@
 </head>
 
 <body>
-    <div id="sidebar">
-        <h3>BET YOUR JOURNEY</h3>
-    </div>
-    <div id="logo">
-        <img id="logo" src="images/annen.png" alt="logo">
-    </div>
-    <div id="footer">
-        <p>Created By Ray Jin, JiaCheng Li, Blair Niu, XiongSen Xia, Audrey Bongalon</p>
-    </div>
-
-
-
-
-    <div id="section1">
-        <div id="header">
-            <h1>BET YOUR</h1>
-            <h2>JOURNEY</h2>
-            <div id="subhead">
-                <p>Are you looking for some inspirations for an exciting trip this upcoming holiday season?</p>
-                <p>Use our travel machine to help you choose a destination.</p>
+    <div id="content-container">
+        <div id="sidebar">
+            <div id="logo-div">
+                <div>   <!-- this div is for CSS sizing -->
+                    <img id="logo" src="images/annen.png" alt="logo">
+                </div>
+            </div>
+            <div id="sidebar-text">
+                <div>   <!-- this div is for CSS positioning -->
+                    <h3>BET YOUR JOURNEY</h3>
+                </div>
             </div>
         </div>
 
-        <div id="chips">
-            <img class="coin"   src="images/poker-chip1.png"    alt="chip"  data-travel-days="3">
-            <img class="coin"   src="images/poker-chip2.png"    alt="chip"  data-travel-days="5">
-            <img class="coin"   src="images/poker-chip3.png"    alt="chip"  data-travel-days="7">
-            <img class="coin"   src="images/poker-chip4.png"    alt="chip"  data-travel-days="10">
 
-            <div class="alert">
-                <p>Select the number of days</p>
-                <p>you want to travel!!</p>
-                <img src="images/alert.png" alt=alert>
+
+        <div id="main">
+            <div id="section1">
+                <div id="header">
+                    <h1>BET YOUR</h1>
+                    <h2>JOURNEY</h2>
+                    <div id="subhead">
+                        <p>Are you looking for some inspirations for an exciting trip this upcoming holiday season?</p>
+                        <p>Use our travel machine to help you choose a destination.</p>
+                    </div>
+                </div>
+
+                <div id="chips">
+                    <div id="coins-div">
+                        <img class="coin"   src="images/poker-chip1.png"    alt="chip"  data-travel-days="3">
+                        <img class="coin"   src="images/poker-chip2.png"    alt="chip"  data-travel-days="5">
+                        <img class="coin"   src="images/poker-chip3.png"    alt="chip"  data-travel-days="7">
+                        <img class="coin"   src="images/poker-chip4.png"    alt="chip"  data-travel-days="10">
+                    </div>
+
+                    <div id="directions-chips">
+                        <p>Select the number of days you want to travel by clicking one of the chips!!</p>
+                    </div>
+
+                    <section id="slide" class="slider">
+                        <a href="#slot"><span></span><span></span><span></span><p>Start Your Journey<p></a>
+                    </section>
+                </div>
             </div>
 
-<!--            TODO -->
-            <div id="clearfloat"></div>
-            <section id="slide" class="slider">
-                <a href="#slot"><span></span><span></span><span></span><p>Start Your Journey<p></a>
+            <section id="slot">
+                <div id="hover">
+                    <p> Add some random excitement for your trip by clicking on the question marks in our slot machine.
+                    We’ll do the thinking for you!</p>
+                    <span id="important">Click anywhere on slot machine once your are done</span>
+                </div>
+                <div id="machine">
+                    <img src="images/Machine.png" alt="slotMachine">
+                    <div id="first">?</div>
+                    <div id="second">?</div>
+                    <div id="third">?</div>
+                </div>
             </section>
         </div>
     </div>
 
-    <section id="slot">
-        <div id="hover">
-            <p> Add some random excitement for your trip by clicking on the question marks in our slot machine.
-            We’ll do the thinking for you!</p>
-            <span id="important">Click anywhere on slot machine once your are done</span>
-        </div>
-        <div id="machine">
-            <img src="images/Machine.png" alt="slotMachine">
-            <div id="first">?</div>
-            <div id="second">?</div>
-            <div id="third">?</div>
-        </div>
-    </section>
+    <div id="footer">
+        <p>Created By Ray Jin, JiaCheng Li, Blair Niu, XiongSen Xia, Audrey Bongalon</p>
+    </div>
 
 
     <script type="text/javascript" src="jquery-3.4.1.min.js"></script>

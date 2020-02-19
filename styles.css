@@ -1,3 +1,10 @@
+/* variables */
+:root {
+    --sidebar-width: 6vw;
+}
+
+
+
 html, body {
     overflow-y: hidden;
     overflow-x: hidden;
@@ -34,18 +41,9 @@ body {
 
 #subhead {
     width: 70%;
-    padding-left: 6%;
-    padding-top: 4%;
+    margin-left: 6%;
+    margin-top: 4%;
     font-size: 14px;
-}
-
-
-
-
-#logo {
-    width: 18%;
-    padding-left: 1%;
-    position: absolute;
 }
 
 
@@ -107,11 +105,12 @@ body {
 
 
 #chips {
-    width: 45%;
-    position: center;
+    /*width: 45%;*/
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
+    display: flex;
 }
 
 
@@ -138,19 +137,58 @@ body {
 
 
 
-/* side bar */
+/* contains #sidebar and #main */
+#content-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 #sidebar {
-    border-bottom: solid black 0.3px;
+    flex: 0 0 var(--sidebar-width); /* as a flex child of #content-container, keep width constant at 6vw */
+    display: flex;                  /* be a flex parent of #logo and <h3> */
+    flex-direction: column;
+
+    background-color: rgb(254, 254, 254);   /* fallback for browsers that don't support rgba */
+    background-color: rgba(254, 254, 254, 0.749);
+    border-right: solid #aaaaaa 1px;
+}
+
+/* stuff not in the sidebar */
+#main {
+
+}
+
+
+
+
+#logo-div {
+    flex: 0 0 var(--sidebar-width); /* set to the same as the width of the sidebar */
+}
+#logo-div div {
+    margin: 5px;    /* spacing around the logo */
+}
+#logo {
+    width: 100%;    /* because the original image is huge */
+}
+
+#sidebar-text {
+    /* automatically resizes vertically with flex */
+}
+#sidebar-text > div {
+    display: block;
+}
+#sidebar-text > div > h3 {
     text-align: center;
     font-family: "Montserrat", sans-serif;
-    width: 100vh;
-    height: 6vw;
-    transform-origin: top left;
-    position: fixed;
-    left: 0;
-    top: 100%;
-    transform: rotate(-90deg);
-    background-color: rgba(254, 254, 254, 0.749);
+    white-space: normal;
+    line-height: 1.5em;
+
+    position: absolute;
+    top: 50%;
+    left: calc(var(--sidebar-width) / 2);   /* hacky, but absolute position does not work for flex children */
+    -moz-transform:     translateX(-50%) translateY(-50%) rotate(-90deg);
+    -webkit-transform:  translateX(-50%) translateY(-50%) rotate(-90deg);
+    transform:          translateX(-50%) translateY(-50%) rotate(-90deg);
 }
 
 
@@ -217,7 +255,7 @@ section h1 {
 #slide a {
     font-family: "Montserrat", sans-serif;
     visibility: hidden;
-    padding-top: 100px;
+    margin-top: 100px;
 }
 
 
@@ -306,44 +344,27 @@ section h1 {
 
 
 
-/* alert message for when hovering the coins */
-.alert {
-    /*visibility: hidden;*/
-    position: relative;
-    float: right;
-    border: 1px black;
+/* div surrounding the coins */
+#coins-div {
+    width: 100%;
+    /*flex: 2 2 auto;*/
+    /*flex-direction: row;*/
+    /*flex-wrap: nowrap;*/
+}
+
+#directions-chips {
+    flex: 1 1 auto;
     text-align: center;
-    top: -320px;
-    left: 150px;
     font-family: "Mansalva", cursive;
     font-size: 25px;
     transform: rotate(9deg);
-    /*visibility: visible;*/
 }
 
 
 
 
-.alert p {
+#directions-chips p {
     margin: 0;
-}
-
-
-
-
-.alert img {
-    padding: 0;
-    position: relative;
-    top: -20px;
-    width: 10px;
-}
-
-
-
-
-.left {
-    width: 50%;
-    float: left;
 }
 
 

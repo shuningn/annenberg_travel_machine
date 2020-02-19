@@ -34,13 +34,10 @@ document.querySelector("#machine").onmouseover = function () {
 
 
 document.querySelector("#sidebar").onmouseover = function () {
-    document.querySelector("h3").innerHTML = "Created By Ray Jin, JiaCheng Li, Blair Niu, XiongSen Xia, Audrey Bongalon";
+    document.querySelector("h3").innerHTML = "Created By: Ray Jin, JiaCheng Li, Blair Niu,<br>XiongSen Xia, Audrey Bongalon";
     document.querySelector("h3").style.letterSpacing = "3px";
-    document.querySelector("h3").style.fontSize = "14px";
+    document.querySelector("h3").style.fontSize = "12px";
 }
-
-
-
 
 document.querySelector("#sidebar").onmouseout = function () {
     document.querySelector("h3").innerHTML = "TRAVEL MACHINE";
